@@ -1,0 +1,43 @@
+@import '../../global.scss'; // Import global variables
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: $primaryColor;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 1.875rem;
+    width: 65%;
+
+    li {
+      margin-bottom: 25px;
+
+      a {
+        color: inherit;
+        font-size: inherit;
+        font-weight: 300;
+        text-decoration: none;
+      }
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}
