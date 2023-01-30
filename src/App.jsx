@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Intro from './components/intro/Intro';
-import Portfolio from './components/portfolio/Portfolio';
+import Projects from './components/projects/Projects';
 import Works from './components/works/Works';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
@@ -16,7 +16,7 @@ function App() {
       <Menu expandMenu={expandMenu} setExpandMenu={setExpandMenu} />
       <section className='sections'>
         <Intro />
-        <Portfolio />
+        <Projects />
         <Works />
         <Testimonials />
         <Contact />
