@@ -2,12 +2,9 @@ import { useState, useEffect } from 'react';
 import ProjectsList from '../projectsList/ProjectsList';
 import './Projects.scss';
 import { subHeader } from './projectsUtilities';
-import {
-  featuredData,
-  mobileData,
-  webData,
-  articleData,
-} from './projectsData';
+import live from '../../assets/live.svg';
+import github from '../../assets/github.svg';
+import { featuredData, mobileData, webData, articleData } from './projectsData';
 
 function Projects() {
   const [selected, setSelected] = useState('featured');
@@ -51,6 +48,20 @@ function Projects() {
           <div className='project__items' key={detail.id}>
             <img src={detail.image} alt={detail.title} />
             <h3>{detail.title}</h3>
+            <div className='show'>
+              <img
+                src={live}
+                alt='live'
+                className='live'
+                onClick={() => window.open(detail.live, '_blank')}
+              />
+              <img
+                src={github}
+                alt='github'
+                className='github'
+                onClick={() => window.open(detail.github, '_blank')}
+              />
+            </div>
           </div>
         ))}
       </div>
