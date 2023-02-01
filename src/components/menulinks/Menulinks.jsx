@@ -1,7 +1,7 @@
 function Menulinks({ expandMenu, setExpandMenu }) {
   return (
     <>
-      {['#intro', '#projects', '#works', '#testimonials', '#contact'].map(
+      {['#intro', '#projects', '#skills', '#testimonials', '#contact'].map(
         (link) => (
           <li key={link} onClick={() => setExpandMenu(!expandMenu)}>
             <a href={link}>
