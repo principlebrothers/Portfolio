@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Intro from './components/intro/Intro';
 import Projects from './components/projects/Projects';
-import Works from './components/works/Works';
+import Skills from './components/skills/Skills';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Menu from './components/menu/Menu'
@@ -17,7 +17,7 @@ function App() {
       <section className='sections'>
         <Intro />
         <Projects />
-        <Works />
+        <Skills />
         <Testimonials />
         <Contact />
       </section>
