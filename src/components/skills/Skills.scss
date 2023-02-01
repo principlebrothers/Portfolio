@@ -1,0 +1,117 @@
+@import '../../global.scss';
+
+.skills {
+  background-color: $btn-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    position: absolute;
+    height: 50px;
+    cursor: pointer;
+
+    &.left{
+      transform: rotateY(180deg);
+      left: 100px;
+    }
+
+    &.right{
+      right: 100px;
+    }
+  }
+
+  .slider {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-in-out;
+
+    .container {
+      width: 100vw;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: $secondaryColor;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.4);
+
+        .left {
+          display: flex;
+          flex: 0.7;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+
+          .left__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+
+            .img__container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 2px solid $primaryColor;
+
+              img {
+                object-fit: contain;
+              }
+            }
+
+            h2 {
+              font-size: 1.35rem;
+            }
+
+            .frontend__exp {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+              width: 70%;
+              margin-top: 10px;
+
+              .frontend__exp__item {
+                display: flex;
+                align-items: center;
+                padding: 4px 10px;
+                gap: 10px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $btn-color;
+                color: $secondaryColor;
+                font-size: 0.8rem;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+
+        .right {
+          flex: 0.3;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
