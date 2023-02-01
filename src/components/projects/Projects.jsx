@@ -29,6 +29,10 @@ function Projects() {
     }
   }, [selected]);
 
+  const openLinks = (link) => {
+    window.open(link, '_blank');
+  };
+
   return (
     <article className='projects' id='projects'>
       <h1>Projects</h1>
@@ -53,13 +57,13 @@ function Projects() {
                 src={live}
                 alt='live'
                 className='live'
-                onClick={() => window.open(detail.live, '_blank')}
+                onClick={()=>openLinks(detail.live)}
               />
               <img
                 src={github}
                 alt='github'
-                className='github'
-                onClick={() => window.open(detail.github, '_blank')}
+                className={detail.github === undefined ? 'github do__not__display': 'github'}
+                onClick={()=>openLinks(detail.github)}
               />
             </div>
           </div>
