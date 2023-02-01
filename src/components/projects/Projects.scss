@@ -75,7 +75,11 @@
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75);
         }
 
-        .common-hover-active {
+        .do__not__display {
+          display: none;
+        }
+
+        .common__hover__active {
           &:hover {
             transform: scale(0.9);
             background-color: $secondaryColor;
@@ -95,11 +99,11 @@
         }
 
         .live {
-          @extend .common-hover-active;
+          @extend .common__hover__active;
         }
 
         .github {
-          @extend .common-hover-active;
+          @extend .common__hover__active;
         }
       }
     }
