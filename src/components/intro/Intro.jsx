@@ -30,7 +30,7 @@ function Intro() {
             </span>
           </h3>
         </div>
-        <a href='#portfolio'>
+        <a href='#projects'>
           <img src={down} alt='down' />
         </a>
       </div>
