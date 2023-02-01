@@ -12,12 +12,12 @@
     height: 50px;
     cursor: pointer;
 
-    &.left{
+    &.left {
       transform: rotateY(180deg);
       left: 100px;
     }
 
-    &.right{
+    &.right {
       right: 100px;
     }
   }
@@ -44,6 +44,18 @@
         align-items: center;
         justify-content: center;
         box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.4);
+
+        .right {
+          flex: 0.3;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            object-fit: contain;
+          }
+        }
 
         .left {
           display: flex;
@@ -97,18 +109,6 @@
                 overflow: hidden;
               }
             }
-          }
-        }
-
-        .right {
-          flex: 0.3;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          img {
-            object-fit: contain;
           }
         }
       }
