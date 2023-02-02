@@ -21,7 +21,7 @@ function Intro() {
             <span>
               <Typewriter
                 options={{
-                  strings: ['a Writer', 'and a Typist'],
+                  strings: ['a Content Writer', 'and a Typist'],
                   autoStart: true,
                   delay: 75,
                   loop: true,
