@@ -1,6 +1,6 @@
 import linkedin from '../../assets/linkedin.jpg';
 
-export const testimonials = [
+const testimonials = [
   {
     id: 1,
     name: 'Tracey Kadenyi',
@@ -9,15 +9,6 @@ export const testimonials = [
     icon: linkedin,
     desc: 'Ernest is a competent developer. Not only is he knowledgeable, particularly in front-end Web development (reactjs) but also he is a determined learner and can grasp concepts quickly and easily. I have worked with him and would do so again.',
   },
-  // {
-  //   id: 2,
-  //   name: 'Seth Bizimana',
-  //   title: 'Full-stack Web Developer',
-  //   img: 'https://media.licdn.com/dms/image/D4E03AQE_3uaTsalSHA/profile-displayphoto-shrink_100_100/0/1671548065118?e=1680739200&v=beta&t=ROcwd7b5HFWlAcgLlbbg9T0jgvjw2hpntpeypHamjQ8',
-  //   icon: linkedin,
-  //   desc: "Ernest is an amazing person he is particularly talented at making people around him feel comfortable, technically he is always eager to learn and he is practically good at it, considering how he grasped new concepts quickly. another thing is that while working with Ernest I always feel confident to produce a professional and good-looking UI and let me tell you something. He never fails me even once. by the time our project was done, I felt like we'd known each other for years. I can't recommend him enough",
-  //   featured: true,
-  // },
   {
     id: 2,
     name: 'Ushindi Bienvenu',
@@ -36,3 +27,5 @@ export const testimonials = [
     desc: 'I highly recommend Ernest, he is patient and ensures he get positive output in whatever he is doing. I had worked with him a couple of times and can boldly say that it is great working with him.',
   },
 ];
+
+export default testimonials;

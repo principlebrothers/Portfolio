@@ -1,6 +1,6 @@
 import './Testimonials.scss';
 import enterArrow from '../../assets/enterArrow.png';
-import { testimonials } from './refreesData';
+import testimonials from './refreesData';
 
 function Testimonials() {
   return (
