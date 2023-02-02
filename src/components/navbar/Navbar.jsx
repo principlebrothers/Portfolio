@@ -1,4 +1,5 @@
-import { Mail, Person } from '@material-ui/icons';
+import { BsFillFilePersonFill } from 'react-icons/bs';
+import { SiGmail } from 'react-icons/si';
 import './Navbar.scss';
 
 function Navbar({expandMenu, setExpandMenu}) {
@@ -10,16 +11,16 @@ function Navbar({expandMenu, setExpandMenu}) {
             Ernest A. A.
           </a>
           <div className='personalDetails'>
-            <Person className='icon' />
+            <BsFillFilePersonFill className='icon' />
             <span>+233542831189</span>
           </div>
           <div className='personalDetails'>
-            <Mail className='icon' />
+            <SiGmail className='icon' />
             <span>adonuernest@gmail.com</span>
           </div>
         </div>
         <div className='right'>
-          <div className='hamburger' onClick={()=> setExpandMenu(!expandMenu)}>
+          <div className='hamburger' onClick={() => setExpandMenu(!expandMenu)}>
             <span className='row1'></span>
             <span className='row2'></span>
             <span className='row3'></span>

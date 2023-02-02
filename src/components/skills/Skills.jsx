@@ -4,7 +4,7 @@ import frontend from '../../assets/frontend.jpg';
 import backendIcon from '../../assets/backendIcon.png';
 import contentWritingIcon from '../../assets/contentWritingIcon.png';
 import arrow from '../../assets/arrow.png';
-import { VerifiedUser } from '@material-ui/icons/';
+import { GoVerified } from 'react-icons/go';
 import {
   frontendSkills,
   backendSkills,
@@ -45,50 +45,50 @@ function Skills() {
 
   return (
     <article className='skills' id='skills'>
-      <div className='slider' style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
+      <div
+        className='slider'
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
         {data.map((info) => (
-        <div className='container' key={info.id}>
-          <div className='item'>
-            <div className='left'>
-              <div className='left__container'>
-                <div className='img__container'>
-                  <img src={info.icon} alt='frontend' />
-                </div>
+          <div className='container' key={info.id}>
+            <div className='item'>
+              <div className='left'>
+                <div className='left__container'>
+                  <div className='img__container'>
+                    <img src={info.icon} alt='frontend' />
+                  </div>
                   <h2>{info.title}</h2>
-                <div className='frontend__exp'>
-                  {info.desc.map((skill, index) => (
-                    <article key={index}>
-                      <div className='frontend__exp__item'>
-                        <VerifiedUser />
-                        <h4>{skill}</h4>
-                      </div>
-                    </article>
-                  ))}
+                  <div className='frontend__exp'>
+                    {info.desc.map((skill, index) => (
+                      <article key={index}>
+                        <div className='frontend__exp__item'>
+                          <GoVerified />
+                          <h4>{skill}</h4>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className='right'>
-              <img
-                src={info.img}
-                alt='frontend_image'
-              />
+              <div className='right'>
+                <img src={info.img} alt='frontend_image' />
+              </div>
             </div>
           </div>
-        </div>
         ))}
       </div>
-        <img
-          src={arrow}
-          alt='arrow left'
+      <img
+        src={arrow}
+        alt='arrow left'
         className='arrow left'
         onClick={() => handleClick('left')}
-        />
-        <img
-          src={arrow}
-          alt='arrow right'
+      />
+      <img
+        src={arrow}
+        alt='arrow right'
         className='arrow right'
         onClick={() => handleClick('right')}
-        />
+      />
     </article>
   );
 }
