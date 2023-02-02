@@ -1,3 +1,88 @@
+@import '../../global.scss';
+
 .testimonials {
-  background-color: #f08080;
+  background-color: $secondaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3.125rem;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+    .card {
+      width: 340px;
+      height: 76%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px -8px #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+      transition: all 0.7s ease;
+
+      &.featured {
+        width: 370px;
+        height: 85%;
+        margin: 5px 30px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          &.left,
+          &.right {
+            height: 25px;
+          }
+
+          &.user {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 30px;
+          }
+        }
+      }
+
+      .center {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #faf4f5;
+        text-align: justify;
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+          margin-bottom: 5px;
+        }
+
+        h4 {
+          color: gray;
+        }
+      }
+    }
+  }
 }
