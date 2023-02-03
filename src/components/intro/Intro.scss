@@ -31,7 +31,7 @@
 
         span {
           font-size: inherit;
-          color: #86091b;
+          color: $btn-color;
         }
       }
     }
@@ -61,11 +61,12 @@
     .img__container {
       width: 700px;
       height: 700px;
-      background-color: #86091b;
+      background-color: $btn-color;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
+      box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       img {
         height: 100%;
