@@ -10,6 +10,10 @@
   h1 {
     font-size: 3.125rem;
     overflow: hidden;
+
+    @include mobile {
+      font-size: 2.5rem;
+    }
   }
 
   .container {
@@ -35,6 +39,11 @@
         width: 370px;
         height: 85%;
         margin: 5px 30px;
+
+        @include mobile {
+          width: 300px;
+          height: 80%;
+        }
       }
 
       &:hover {
@@ -67,6 +76,11 @@
         border-radius: 10px;
         background-color: #faf4f5;
         text-align: justify;
+
+        @include mobile {
+          padding: 5px;
+          font-size: 14px;
+        }
       }
 
       .bottom {
