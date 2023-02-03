@@ -5,7 +5,6 @@ export const frontendSkills = [
   'React',
   'Redux',
   'Bootstrap',
-  'Material UI',
   'Sass',
 ];
 
