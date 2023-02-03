@@ -55,6 +55,10 @@
         display: flex;
         align-items: center;
 
+        @include mobile {
+          display: none;
+        }
+
         .icon {
           font-size: 1.125rem;
           margin-right: 5px;
