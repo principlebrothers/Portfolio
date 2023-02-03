@@ -6,3 +6,12 @@ $glow-spread-color: #bf7bffc7;
 $enhanced-glow-color: #e7ceff;
 $btn-color: #643d88;
 $futureColor:#4db5ff;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+
+}
