@@ -4,12 +4,22 @@
   background-color: $secondaryColor;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     flex: 1;
     background-color: $btn-color;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    @include mobile {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 60px;
+    }
 
     img {
       width: 100%;
@@ -32,6 +42,11 @@
       align-items: center;
       font-size: 1rem;
 
+      @include mobile {
+        width: 90%;
+        height: 90%;
+      }
+
       input {
         width: 100%;
         height: 30px;
@@ -41,6 +56,10 @@
         outline: none;
         font-size: inherit;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        @include mobile {
+          margin: 5px 0;
+        }
       }
 
       textarea {
@@ -52,6 +71,10 @@
         outline: none;
         padding: 5px 12px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        @include mobile {
+          margin: 5px 0;
+        }
       }
 
       button {
