@@ -7,6 +7,10 @@ li {
   cursor: pointer;
   border-radius: 10px;
 
+  @include mobile {
+    margin-right: 0;
+  }
+
   &.active {
     background-color: $primaryColor;
     color: $secondaryColor;
