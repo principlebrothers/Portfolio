@@ -3,16 +3,25 @@
 .contact {
   background-color: $secondaryColor;
   display: flex;
+  gap: 2rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   .left {
     flex: 1;
-    background-color: $btn-color;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 60px;
+    background-color: #c7c6c677;
+
+    @include mobile {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 60px;
+    }
 
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -21,37 +30,52 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+    h1 {
+      /* stylelint-disable-next-line */
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: $primaryColor;
+      margin-bottom: 1.5rem;
+    }
 
     form {
-      width: 70%;
-      height: 70%;
+      padding-inline: 0 2rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center;
+      gap: 2rem;
       font-size: 1rem;
+
+      @include mobile {
+        width: 90%;
+        // height: 90%;
+      }
 
       input {
         width: 100%;
-        height: 30px;
         border: 2px solid $btn-color;
-        border-radius: 10px;
-        padding: 20px 12px;
+        padding: 1rem;
         outline: none;
-        font-size: inherit;
+        font-size: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        @include mobile {
+          margin: 5px 0;
+        }
       }
 
       textarea {
         font-size: inherit;
         width: 100%;
         height: 200px;
-        border-radius: 10px;
         border: 2px solid $btn-color;
         outline: none;
         padding: 5px 12px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        @include mobile {
+          margin: 5px 0;
+        }
       }
 
       button {
@@ -59,7 +83,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 15px;
+        align-self: flex-start;
+        padding: 0.5rem 3rem;
         background: $btn-color;
         box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.6);
         overflow: hidden;
@@ -69,7 +94,7 @@
           content: ' ';
           width: 0%;
           height: 100%;
-          background: $glow-spread-color;
+          background: rgba(255, 255, 255, 0.1);
           position: absolute;
           transition: all 0.4s ease-in-out;
           right: 0;

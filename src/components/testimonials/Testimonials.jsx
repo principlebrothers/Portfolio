@@ -4,7 +4,7 @@ import testimonials from './refreesData';
 
 function Testimonials() {
   return (
-    <article className='testimonials' id='testimonials'>
+    <section className='testimonials' id='testimonials'>
       <h1>Testimonials</h1>
       <article className='container'>
         {testimonials.map((testimonial) => (
@@ -31,7 +31,7 @@ function Testimonials() {
           </div>
         ))}
       </article>
-    </article>
+    </section>
   );
 }
 

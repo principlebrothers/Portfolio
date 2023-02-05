@@ -1,5 +1,7 @@
-import { BsFillFilePersonFill } from 'react-icons/bs';
+import { FaAngellist } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
+import { ImLinkedin } from 'react-icons/im';
+import { FaTwitterSquare } from 'react-icons/fa';
 import './Navbar.scss';
 
 function Navbar({expandMenu, setExpandMenu}) {
@@ -8,15 +10,33 @@ function Navbar({expandMenu, setExpandMenu}) {
       <div className='wrapper'>
         <div className='left'>
           <a href='#intro' className='logo'>
-            Ernest A. A.
+            {'<Ernest A. />'}
           </a>
-          <div className='personalDetails'>
-            <BsFillFilePersonFill className='icon' />
-            <span>+233542831189</span>
+          <div className='socialMedia'>
+            <FaAngellist className='icon' />
+            <span>
+              <a href='https://angel.co/u/ernest-anyewe-adonu'>Angellist</a>
+            </span>
           </div>
-          <div className='personalDetails'>
+          <div className='socialMedia'>
             <SiGmail className='icon' />
-            <span>adonuernest@gmail.com</span>
+            <span>
+              <a href='mailto:adonuernest@gmail.com'>Gmail</a>
+            </span>
+          </div>
+          <div className='socialMedia'>
+            <ImLinkedin className='icon' />
+            <span>
+              <a href='https://www.linkedin.com/in/ernest-anyewe-adonu'>
+                LinkendIn
+              </a>
+            </span>
+          </div>
+          <div className='socialMedia'>
+            <FaTwitterSquare className='icon' />
+            <span>
+              <a href='https://twitter.com/adonu_ernest'>Twitter</a>
+            </span>
           </div>
         </div>
         <div className='right'>

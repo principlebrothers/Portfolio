@@ -48,12 +48,12 @@ function Contact() {
   };
 
   return (
-    <article className='contact' id='contact'>
+    <section className='contact' id='contact'>
       <div className='left'>
         <img src={shake} alt='hand shake' />
       </div>
       <div className='right'>
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -77,7 +77,7 @@ function Contact() {
         </form>
         <ToastContainer />
       </div>
-    </article>
+    </section>
   );
 }
 

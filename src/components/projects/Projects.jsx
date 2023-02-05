@@ -34,7 +34,7 @@ function Projects() {
   };
 
   return (
-    <article className='projects' id='projects'>
+    <section className='projects' id='projects'>
       <h1>Projects</h1>
       <ul>
         {subHeader.map((list) => (
@@ -69,7 +69,7 @@ function Projects() {
           </div>
         ))}
       </div>
-    </article>
+    </section>
   );
 }
 

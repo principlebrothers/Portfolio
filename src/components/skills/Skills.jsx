@@ -44,7 +44,7 @@ function Skills() {
   };
 
   return (
-    <article className='skills' id='skills'>
+    <section className='skills' id='skills'>
       <div
         className='slider'
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -60,12 +60,10 @@ function Skills() {
                   <h2>{info.title}</h2>
                   <div className='frontend__exp'>
                     {info.desc.map((skill, index) => (
-                      <article key={index}>
-                        <div className='frontend__exp__item'>
+                        <div className='frontend__exp__item' key={index}>
                           <GoVerified />
                           <h4>{skill}</h4>
                         </div>
-                      </article>
                     ))}
                   </div>
                 </div>
@@ -89,7 +87,7 @@ function Skills() {
         className='arrow right'
         onClick={() => handleClick('right')}
       />
-    </article>
+    </section>
   );
 }
 
