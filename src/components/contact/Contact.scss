@@ -32,6 +32,7 @@
     justify-content: center;
 
     h1 {
+      /* stylelint-disable-next-line */
       font-size: clamp(2rem, 5vw, 3.5rem);
       color: $primaryColor;
       margin-bottom: 1.5rem;
@@ -48,7 +49,6 @@
       @include mobile {
         width: 90%;
         // height: 90%;
-
       }
 
       input {
