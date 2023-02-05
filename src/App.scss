@@ -10,6 +10,10 @@
 
     @include mobile {
       height: unset;
+
+      .skills {
+        height: 100vh;
+      }
     }
 
     > * {
