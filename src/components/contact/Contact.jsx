@@ -48,7 +48,7 @@ function Contact() {
   };
 
   return (
-    <article className='contact' id='contact'>
+    <section className='contact' id='contact'>
       <div className='left'>
         <img src={shake} alt='hand shake' />
       </div>
@@ -77,7 +77,7 @@ function Contact() {
         </form>
         <ToastContainer />
       </div>
-    </article>
+    </section>
   );
 }
 
