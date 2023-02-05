@@ -1,21 +1,19 @@
+@import './global.scss';
+
 .App {
-  height: 100vh;
 
   section {
-    height: calc(100vh - 70px);
-    background-color: #ffa07a;
+    height: 100vh;
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scrollbar-width: none; /* Firefox */
-    &::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+
+    @include mobile {
+      height: unset;
     }
 
     > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
       scroll-snap-align: start;
     }
   }
