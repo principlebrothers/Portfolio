@@ -1,24 +1,38 @@
 @import '../../global.scss';
 
 .skills {
-  background-color: $btn-color;
+  background-color: $primaryColor;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 100vh;
 
   .arrow {
     position: absolute;
     height: 50px;
     cursor: pointer;
 
+    @include mobile {
+      height: 30px;
+    }
+
+
     &.left {
       transform: rotateY(180deg);
       left: 100px;
+
+      @include mobile {
+        left: -7px;
+      }
     }
 
     &.right {
       right: 100px;
+
+      @include mobile {
+        right: -6px;
+      }
     }
   }
 
@@ -30,13 +44,14 @@
 
     .container {
       width: 100vw;
-      height: 350px;
+      height: 400px;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 100%;
+        max-width: 768px;
         height: 100%;
         background-color: $secondaryColor;
         border-radius: 20px;
@@ -45,12 +60,21 @@
         justify-content: center;
         box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+        @include mobile {
+          width: 90vw;
+          height: 76%;
+        }
+
         .right {
-          flex: 0.3;
-          height: 100%;
+          flex: 0.5;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding-right: 2rem;
+
+          @include mobile {
+            display: none;
+          }
 
           img {
             object-fit: contain;
@@ -59,10 +83,16 @@
 
         .left {
           display: flex;
-          flex: 0.7;
+          flex: 0.5;
           justify-content: center;
           align-items: center;
           height: 80%;
+          padding-left: 2rem;
+
+          @include mobile {
+            padding-left: 0;
+            flex: 1;
+          }
 
           .left__container {
             display: flex;
@@ -70,6 +100,12 @@
             align-items: center;
             width: 90%;
             height: 100%;
+            padding-top: 1.5rem;
+
+            @include mobile {
+              width: 80%;
+              align-items: center;
+            }
 
             .img__container {
               display: flex;
@@ -87,26 +123,39 @@
 
             h2 {
               font-size: 1.35rem;
+              margin-bottom: 0.5rem;
+
+              @include mobile {
+                font-size: 1.1rem;
+              }
             }
 
             .frontend__exp {
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              grid-gap: 10px;
-              width: 70%;
-              margin-top: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
 
               .frontend__exp__item {
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 padding: 4px 10px;
                 gap: 10px;
                 height: 40px;
                 border-radius: 10px;
-                background-color: $btn-color;
+                background-color: #f32481;
                 color: $secondaryColor;
                 font-size: 0.8rem;
-                overflow: hidden;
+              }
+
+              @include mobile {
+                gap: 6px;
+
+                .frontend__exp__item {
+                  padding: 2px 5px;
+                  height: 30px;
+                  font-size: 0.9rem;
+                }
               }
             }
           }
