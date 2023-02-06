@@ -63,6 +63,7 @@ After you're finished please remove all the comments and instructions!
 # 📖 Portfolio <a name="about-project"></a>
 
 **Portfolio** is a web app designed to showcase projects, skills and to help recuiters and  people interested in the works to contact me.
+![portfolio](https://user-images.githubusercontent.com/92553079/216998316-a8db1d9f-c670-4b22-b0c2-8ac486b0a8ce.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
