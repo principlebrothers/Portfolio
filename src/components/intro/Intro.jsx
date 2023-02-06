@@ -15,7 +15,7 @@ function Intro() {
       </div>
       <div className='right'>
         <div className='wrapper'>
-          <h2>
+          <h1>
             Hello! I'm Ernest,{' '}
             <span>
               <Typewriter
@@ -31,20 +31,22 @@ function Intro() {
                 }}
               />
             </span>
-          </h2>
+          </h1>
           <p>
             Motivated software engineer with more than 1300 hours of teamwork
             experience. Skilled at producing top-notch web apps with a heavy
-            empahsis on effectiveness and user experiences. Process automation
+            emphasis on effectiveness and user experiences. Process automation
             is a topic I enjoy. You can download my{' '}
             <a
               href={Resume}
               download='Ernest Anyewe Adonu Resume'
               target='_blank'
+              className='resume'
             >
               résumé
             </a>
-            to learn more about my experiences.
+            to learn more about my experiences. Also, if you need someone to help you with your project, feel free to{' '}
+            <a href='#contact' className='contact__me'>contact me.</a>
           </p>
         </div>
         <a href='#projects'>
