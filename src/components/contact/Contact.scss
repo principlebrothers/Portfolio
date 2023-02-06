@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 1rem;
 
     h1 {
       /* stylelint-disable-next-line */
@@ -48,7 +49,6 @@
 
       @include mobile {
         width: 90%;
-        // height: 90%;
       }
 
       input {
