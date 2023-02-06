@@ -19,7 +19,7 @@ function Testimonials() {
                 alt={testimonial.name}
                 className='user'
               />
-              <a href='https://www.linkedin.com/in/ernest-anyewe-adonu/#:~:text=all%2043%20skills-,Recommendations,-Recommendations'>
+              <a href='https://www.linkedin.com/in/ernest-anyewe-adonu'>
                 <img src={testimonial.icon} alt='' className='right' />
               </a>
             </div>
