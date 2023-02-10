@@ -50,20 +50,23 @@ function Projects() {
       <div className='container'>
         {data.map((detail) => (
           <div className='project__items' key={detail.id}>
-            <img src={detail.image} alt={detail.title} />
-            <h3>{detail.title}</h3>
+            <img
+              src={detail.image}
+              alt={detail.title}
+              onClick={() => openLinks(detail.live)}
+            />
+            <h3 onClick={() => openLinks(detail.live)}>{detail.title}</h3>
             <div className='show'>
-              <img
-                src={live}
-                alt='live'
-                className='live'
-                onClick={()=>openLinks(detail.live)}
-              />
               <img
                 src={github}
                 alt='github'
-                className={detail.github === undefined ? 'github do__not__display': 'github'}
-                onClick={()=>openLinks(detail.github)}
+                className={
+                  detail.github === undefined
+                    ? 'github do__not__display'
+                    : 'github'
+                }
+                title='Github Repo'
+                onClick={() => openLinks(detail.github)}
               />
             </div>
           </div>
