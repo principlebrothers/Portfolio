@@ -58,7 +58,8 @@
 
       h3 {
         position: absolute;
-        font-size: 1.5rem;
+        /* stylelint-disable-next-line */
+        font-size: clamp(0.95rem, 2.5vw, 2rem);
       }
 
       img {
@@ -82,16 +83,13 @@
         position: absolute;
         bottom: 0;
         display: flex;
-        gap: 15px;
 
         img {
-          width: 28px;
+          width: 2.6rem;
           background: #fff;
           border-radius: 50%;
           padding: 5px;
           opacity: 1;
-          border: 2px solid $primaryColor;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75);
         }
 
         .do__not__display {
@@ -115,10 +113,6 @@
             border: 2px solid $secondaryColor;
             transition: all 0.5s ease;
           }
-        }
-
-        .live {
-          @extend .common__hover__active;
         }
 
         .github {
