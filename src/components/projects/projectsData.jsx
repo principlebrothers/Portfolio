@@ -24,7 +24,7 @@ export const featuredData = [
     id: 4,
     title: 'Awesome Books',
     image: 'https://i.postimg.cc/tR80JB6Y/awesome-books.png',
-    live: 'https://principlebrothers.github.io/Awesome-books-modified/',
+    live: 'https://awesomeshelves.netlify.app',
     github: 'https://github.com/principlebrothers/Awesome-books-modified',
   },
 ];
