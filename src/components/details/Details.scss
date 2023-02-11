@@ -1,0 +1,47 @@
+@import '../../global.scss'; // Import global variables
+
+.details {
+  display: flex;
+
+  @include mobile {
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    width: 30%;
+    padding: 0.5rem 0.2rem;
+    margin: 0 0.7rem;
+    font-weight: 700;
+    color: $secondaryColor;
+    background-color: $btn-color;
+    box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.8);
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      animation: scaleUp 0.3s ease-in-out;
+    }
+
+    @keyframes scaleUp {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(0.95);
+      }
+
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    &:active {
+      transform: scale(1.1);
+      background-color: $secondaryColor;
+      color: $secondaryColor;
+      transition: background-color 1s ease-out;
+    }
+  }
+}
