@@ -58,7 +58,7 @@ export const webData = [
     id: 3,
     title: 'To-Do-List',
     image: 'https://i.postimg.cc/tRPmgpNV/agenda.png',
-    live: 'https://github.com/principlebrothers/typescripttodo',
+    live: 'https://taskifytodolist.netlify.app/',
     github: 'https://github.com/principlebrothers/typescripttodo',
   },
 ];
