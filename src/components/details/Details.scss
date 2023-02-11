@@ -14,7 +14,7 @@
     margin: 0 0.7rem;
     font-weight: 700;
     color: $secondaryColor;
-    background-color: $btn-color;
+    background-color: $primaryColor;
     box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.8);
     border: none;
     cursor: pointer;
@@ -40,7 +40,7 @@
     &:active {
       transform: scale(1.1);
       background-color: $secondaryColor;
-      color: $secondaryColor;
+      color: $primaryColor;
       transition: background-color 1s ease-out;
     }
   }
