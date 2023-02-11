@@ -3,6 +3,7 @@ import Ernest_profile2 from '../../assets/Ernest_profile2.png';
 import down from '../../assets/down.png';
 import Typewriter from 'typewriter-effect';
 import Resume from '../../assets/Resume.pdf';
+import Details from '../details/Details';
 
 function Intro() {
 
@@ -45,11 +46,15 @@ function Intro() {
             >
               résumé
             </a>
-            to learn more about my experiences. Also, if you need someone to help you with your project, feel free to{' '}
-            <a href='#contact' className='contact__me'>contact me.</a>
+            to learn more about my experiences. Also, if you need someone to
+            help you with your project, feel free to{' '}
+            <a href='#contact' className='contact__me'>
+              contact me.
+            </a>
           </p>
         </div>
-        <a href='#projects'>
+        <Details Resume={Resume} />
+        <a href='#projects' className='arrow_down'>
           <img src={down} alt='down' />
         </a>
       </div>
