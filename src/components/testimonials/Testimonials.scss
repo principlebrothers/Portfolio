@@ -89,7 +89,9 @@
         align-items: center;
         flex-direction: column;
 
-        h3 {
+        .ref__name {
+          color: #000;
+          font-size: 19px;
           margin-bottom: 5px;
         }
 
