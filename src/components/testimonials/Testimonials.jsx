@@ -25,7 +25,7 @@ function Testimonials() {
             </div>
             <div className='center'>{testimonial.desc}</div>
             <div className='bottom'>
-              <h3>{testimonial.name}</h3>
+              <h4 className='ref__name'>{testimonial.name}</h4>
               <h4>{testimonial.title}</h4>
             </div>
           </div>
