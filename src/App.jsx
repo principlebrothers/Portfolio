@@ -7,7 +7,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Menu from './components/menu/Menu';
 import './App.scss';
-import { Slide } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 function App() {
   const [expandMenu, setExpandMenu] = useState(false);
@@ -16,13 +16,13 @@ function App() {
       <Navbar expandMenu={expandMenu} setExpandMenu={setExpandMenu} />
       <Menu expandMenu={expandMenu} setExpandMenu={setExpandMenu} />
       <section className='sections'>
-        <Slide left>
+        <Fade direction='right' duration={2500} triggerOnce>
           <Intro />
-          <Projects />
-          <Skills />
-          <Testimonials />
-          <Contact />
-        </Slide>
+        </Fade>
+        <Projects />
+        <Skills />
+        <Testimonials />
+        <Contact />
       </section>
     </div>
   );
