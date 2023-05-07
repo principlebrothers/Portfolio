@@ -8,6 +8,8 @@ import Contact from './components/contact/Contact';
 import Menu from './components/menu/Menu';
 import './App.scss';
 import { Fade } from 'react-awesome-reveal';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const [expandMenu, setExpandMenu] = useState(false);
@@ -24,6 +26,7 @@ function App() {
         <Testimonials />
         <Contact />
       </section>
+      <Analytics />
     </div>
   );
 }
