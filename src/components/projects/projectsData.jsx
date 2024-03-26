@@ -90,6 +90,30 @@ export const articleData = [
     title: 'Deploy JavaScript Webpack Projects ',
     publisher: 'Medium',
     image: 'https://i.postimg.cc/TYRbLvDP/deploy-Webpack.png',
-    live: 'https://medium.com/@ernestadonu/how-to-fix-readme-md-file-display-in-github-pages-b48c450f1cc8',
+    live: 'https://medium.com/@ernestadonu/how-to-fix-readme-md-file-display-in-github-pages-b48c450f1cc8'
+  },
+  {
+    id: 5,
+    title: 'Upgrade Ruby to it’s latest versions (e.g. 3.2.0, 3.3.0)',
+    publisher: 'Medium',
+    image:
+      'https://miro.medium.com/v2/resize:fit:640/format:webp/0*M-fdcd13oVbF6GGj.jpg',
+    live: 'https://medium.com/@ernestadonu/upgrade-ruby-to-its-latest-version-e-g-3-2-0-3-2-1-66fe8272948e'
+  },
+  {
+    id: 6,
+    title: 'Your attitude is not the problem',
+    publisher: 'Medium',
+    image:
+      'https://miro.medium.com/v2/resize:fit:720/format:webp/1*j3S1NZ70YUfZhzMG3T8oFg.jpeg',
+    live: 'https://medium.com/@ernestadonu/your-attitude-is-not-a-problem-d4a86e5063cb'
+  },
+  {
+    id: 7,
+    title: 'Reverse array in JavaScript without mutating the original array',
+    publisher: 'Medium',
+    image:
+      'https://miro.medium.com/v2/resize:fit:720/format:webp/1*dfkCli_ZP7SIH9c513siNQ.png',
+    live: 'https://medium.com/@ernestadonu/reverse-array-without-mutating-the-original-58bf72dde3ac'
   },
 ];
