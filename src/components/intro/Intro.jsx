@@ -34,7 +34,7 @@ function Intro() {
             </span>
           </h1>
           <p>
-            Motivated software engineer with more than 1300 hours of teamwork
+            Motivated software engineer with more than 15000 hours of teamwork
             experience. Skilled at producing top-notch web apps with a heavy
             emphasis on effectiveness and user experiences. Process automation
             is a topic I enjoy. You can download my{' '}

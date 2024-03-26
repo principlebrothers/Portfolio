@@ -15,7 +15,7 @@ function Navbar({expandMenu, setExpandMenu}) {
           <div className='socialMedia'>
             <FaAngellist className='icon' />
             <span>
-              <a href='https://angel.co/u/ernest-anyewe-adonu'>Angellist</a>
+              <a href='https://angel.co/u/ernest-anyewe-adonu'>Wellfound</a>
             </span>
           </div>
           <div className='socialMedia'>
