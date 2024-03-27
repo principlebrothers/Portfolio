@@ -9,11 +9,11 @@ function Intro() {
 
   return (
     <article className='intro' id='intro'>
-      <div className='left'>
+      {/* <div className='left'>
         <div className='img__container'>
           <img src={Ernest_profile2} alt='profile picture' />
         </div>
-      </div>
+      </div> */}
       <div className='right'>
         <div className='wrapper'>
           <h1>

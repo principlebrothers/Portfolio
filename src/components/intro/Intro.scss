@@ -3,6 +3,7 @@
 .intro {
   background-color: $tertiaryColor;
   display: flex;
+  justify-content: center;
   height: calc(100vh - 70px);
 
   @include mobile {
@@ -13,7 +14,7 @@
   }
 
   .right {
-    flex: 0.5;
+    flex: 0.6;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,8 @@
 
       img {
         width: 30px;
-        animation: arrowBlink 2s infinite;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        animation: arrowBlink 3s infinite;
       }
 
       @keyframes arrowBlink {
@@ -59,7 +61,7 @@
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         margin: 10px 0;
         padding-right: 2rem;
         text-align: justify;
@@ -67,7 +69,7 @@
         color: $primaryColor;
 
         @include mobile {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
           padding: 0.2rem 1rem;
           text-align: center;
         }
@@ -100,7 +102,7 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: clamp(3.5rem, 5vw, 5rem);
         line-height: 1.1;
         color: $primaryColor;
 
@@ -110,7 +112,7 @@
           align-items: center;
           justify-content: center;
           padding-top: 1rem;
-          font-size: 1.7rem;
+          font-size: 2.2rem;
         }
 
         span {
@@ -121,48 +123,48 @@
     }
   }
 
-  .left {
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
+  // .left {
+  //   flex: 0.5;
+  //   display: flex;
+  //   align-items: center;
+  //   height: 100%;
+  //   overflow: hidden;
 
-    @include mobile {
-      flex: 0.4;
-      width: 100%;
-      bottom: 0;
-      position: relative;
-    }
+  //   @include mobile {
+  //     flex: 0.4;
+  //     width: 100%;
+  //     bottom: 0;
+  //     position: relative;
+  //   }
 
-    .img__container {
-      width: 600px;
-      height: 600px;
-      background-color: #502975;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.4),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //   .img__container {
+  //     width: 600px;
+  //     height: 600px;
+  //     background-color: #502975;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     border-radius: 50%;
+  //     box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.4),
+  //       0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-      @include mobile {
-        width: 80%;
-        height: 450px;
-        position: absolute;
-        top: 92%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+  //     @include mobile {
+  //       width: 80%;
+  //       height: 450px;
+  //       position: absolute;
+  //       top: 92%;
+  //       left: 50%;
+  //       transform: translate(-50%, -50%);
+  //     }
 
-      @include mobileTwo {
-        width: 100%;
-        height: 400px;
-      }
+  //     @include mobileTwo {
+  //       width: 100%;
+  //       height: 400px;
+  //     }
 
-      img {
-        height: 100%;
-      }
-    }
-  }
+  //     img {
+  //       height: 100%;
+  //     }
+  //   }
+  // }
 }
