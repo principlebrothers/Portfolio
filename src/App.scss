@@ -6,7 +6,7 @@
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
 
     @include mobile {
       height: unset;
@@ -16,8 +16,8 @@
       }
     }
 
-    > * {
-      scroll-snap-align: start;
-    }
+    // > * {
+    //   scroll-snap-align: start;
+    // }
   }
 }
