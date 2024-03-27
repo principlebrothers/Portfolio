@@ -36,10 +36,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "sass": "^1.57.1",
-    "stylelint": "^16.3.1",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-csstree-validator": "^3.0.0",
-    "stylelint-scss": "^6.2.1",
     "vite": "^4.0.0"
   }
 }
