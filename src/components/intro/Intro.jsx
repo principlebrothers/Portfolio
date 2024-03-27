@@ -1,5 +1,5 @@
 import './Intro.scss'
-import Ernest_profile2 from '../../assets/Ernest_profile2.webp';
+// import Ernest_profile2 from '../../assets/Ernest_profile2.webp';
 import down from '../../assets/down.png';
 import Typewriter from 'typewriter-effect';
 import Resume from '../../assets/Resume.pdf';
